@@ -20,6 +20,7 @@ func main() {
 		panic("Neither listen nor connect not specified")
 	}
 }
+
 func doConnect(addr string) {
 	conn, err := net.Dial("tcp", addr)
 	Must(err, "net.Dial")
